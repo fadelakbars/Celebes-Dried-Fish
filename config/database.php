@@ -81,8 +81,8 @@ if ($configuredUsername !== '' || $configuredDatabase !== '') {
 
 $profiles[] = [
     'host' => 'localhost',
-    'username' => 'u958379998_ikancullank',
-    'password' => 'u958379998_ikanCullank',
+    'username' => 'root',
+    'password' => '',
     'database' => 'u958379998_ikancullank',
     'port' => 3306,
     'socket' => null,
