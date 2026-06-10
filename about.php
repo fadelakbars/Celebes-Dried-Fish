@@ -6,7 +6,7 @@ require_once 'includes/navbar.php';
 
 <div style="background-color: var(--primary-light); padding: 40px 0; text-align: center;">
     <div class="container">
-        <h1 style="color: var(--primary-color);">Tentang Kami</h1>
+        <h1 style="color: var(--primary-color);">Tentang Kita</h1>
         <p>Mengenal lebih dekat Celebes Dried Fish</p>
     </div>
 </div>
