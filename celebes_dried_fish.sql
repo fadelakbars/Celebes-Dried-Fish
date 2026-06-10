@@ -25,9 +25,6 @@ SET time_zone = "+00:00";
 
 --
 -- Table structure for table `orders`
---
-CREATE DATABASE celebes_dried_fish;
-USE celebes_dried_fish;
 
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
