@@ -23,6 +23,11 @@ body {
     line-height: 1.6;
     background-color: var(--white);
     overflow-x: hidden;
+    width: 100%;
+}
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -548,7 +553,7 @@ img {
 
     .nav-links {
         position: absolute;
-        right: -100%;
+        right: 0;
         top: 100%;
         flex-direction: column;
         background-color: var(--white);
@@ -559,10 +564,18 @@ img {
         padding: 20px 0;
         gap: 20px;
         border-top: 1px solid #eee;
+        
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-10px);
     }
 
     .nav-links.nav-active {
-        right: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 
     .hamburger {
@@ -641,12 +654,6 @@ img {
 
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo span {
-        display: none; /* Hide text on very small screens to fit cart, login, and hamburger */
     }
 }
 
