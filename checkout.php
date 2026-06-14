@@ -152,7 +152,7 @@ require_once 'includes/navbar.php';
             <div class="alert alert-danger"><?php echo $error_msg; ?></div>
         <?php endif; ?>
 
-        <div style="display: grid; grid-template-columns: 1fr 350px; gap: 30px;">
+        <div class="checkout-grid">
             <!-- Checkout Form -->
             <div style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                 <h3 style="margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 15px;">Data Pengiriman</h3>
@@ -231,7 +231,7 @@ require_once 'includes/navbar.php';
             </div>
 
             <!-- Order Summary Sidebar -->
-            <div style="background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); padding: 25px; height: fit-content; position: sticky; top: 100px;">
+            <div class="checkout-sidebar">
                 <h3 style="margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 15px;">Barang yang Dibeli</h3>
                 
                 <div style="max-height: 250px; overflow-y: auto; margin-bottom: 20px; padding-right: 10px;">
@@ -268,14 +268,32 @@ require_once 'includes/navbar.php';
 
 
 <style>
+    .checkout-grid {
+        display: grid;
+        grid-template-columns: 1fr 350px;
+        gap: 30px;
+    }
+    .checkout-sidebar {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        padding: 25px;
+        height: fit-content;
+        position: sticky;
+        top: 100px;
+    }
     @media (max-width: 768px) {
-        .container > div {
+        .checkout-grid {
             grid-template-columns: 1fr !important;
         }
         
-        .container > div > div:nth-child(2) {
+        .checkout-grid > div:nth-child(2) {
             order: -1; /* Make summary appear before form on mobile */
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .checkout-sidebar {
+            position: static !important; /* Prevent overlap on mobile */
         }
     }
 </style>

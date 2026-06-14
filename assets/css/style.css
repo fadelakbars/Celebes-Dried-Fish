@@ -520,10 +520,36 @@ img {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+    .nav-container {
+        padding: 10px 15px;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+        line-height: 1.1;
+    }
+
+    .logo-break {
+        display: block;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .user-name-text {
+        display: none;
+    }
+
+    .login-btn {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
     .nav-links {
-        position: fixed;
+        position: absolute;
         right: -100%;
-        top: 70px;
+        top: 100%;
         flex-direction: column;
         background-color: var(--white);
         width: 100%;
@@ -532,6 +558,7 @@ img {
         box-shadow: 0 10px 10px rgba(0,0,0,0.1);
         padding: 20px 0;
         gap: 20px;
+        border-top: 1px solid #eee;
     }
 
     .nav-links.nav-active {
@@ -540,6 +567,7 @@ img {
 
     .hamburger {
         display: block;
+        z-index: 1001;
     }
 
     .hamburger.toggle .line1 {
@@ -553,7 +581,72 @@ img {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem !important;
+        letter-spacing: 3px !important;
+    }
+
+    .hero-desc {
+        font-size: 0.95rem !important;
+    }
+
+    .hero-btns-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-hero-primary, .btn-outline-white {
+        width: 100%;
+    }
+
+    .about-container, .media-container {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+
+    .about-slider-container {
+        height: 300px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col p {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .form-grid, .form-grid-3 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .orders-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo span {
+        display: none; /* Hide text on very small screens to fit cart, login, and hamburger */
     }
 }
 

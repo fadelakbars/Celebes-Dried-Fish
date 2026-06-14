@@ -5,7 +5,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <div class="nav-container">
         <a href="index.php" class="logo" style="display: flex; align-items: center; gap: 10px;">
             <img src="assets/img/logo.png" alt="Logo" class="logo-img" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--white);">
-            <span>Celebes Dried Fish</span>
+            <span class="logo-text">Celebes <span class="logo-break">Dried Fish</span></span>
         </a>
 
         <ul class="nav-links">
@@ -35,7 +35,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
             <?php if(isset($_SESSION['user_id'])): ?>
                 <div class="user-dropdown">
-                    <button class="user-btn"><i class="fas fa-user"></i> <?php echo htmlspecialchars($_SESSION['user_name'] ?? 'Akun'); ?> <i class="fas fa-caret-down"></i></button>
+                    <button class="user-btn"><i class="fas fa-user"></i> <span class="user-name-text"><?php echo htmlspecialchars($_SESSION['user_name'] ?? 'Akun'); ?></span> <i class="fas fa-caret-down"></i></button>
                     <div class="dropdown-content">
                         <?php if(isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
                             <a href="admin/index.php">Dashboard</a>

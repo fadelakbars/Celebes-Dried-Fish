@@ -19,8 +19,11 @@
 
 <main class="main-content">
     <div class="topbar">
-        <div>
-            <!-- Hamburger logic for mobile can go here -->
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <!-- Hamburger logic for mobile -->
+            <button id="adminSidebarToggle" style="background: none; border: none; font-size: 1.5rem; color: var(--admin-primary); cursor: pointer; display: none;" class="mobile-toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
             <h3 style="margin:0; font-weight:500;">Dashboard</h3>
         </div>
         <div class="topbar-right" style="margin-right: 30px;">
