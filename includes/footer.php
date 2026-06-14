@@ -7,7 +7,7 @@
             </div>
             <div class="footer-col">
                 <h3>Tautan Cepat</h3>
-                <ul>
+                <ul class="footer-links-grid">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="product.php">Product</a></li>
