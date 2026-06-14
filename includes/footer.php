@@ -23,9 +23,9 @@
             <div class="footer-col">
                 <h3>Ikuti Kami</h3>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/share/1EvG175B21/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/celebesdriedfish?igsh=cm91aDZ4bHcyeGE1" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@celebesdriedfish?_t=ZS-8x2YNGl2pAw&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61590964343415" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/celebesdriedfish_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@celebesdriedfishh" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
