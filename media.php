@@ -37,16 +37,16 @@ require_once 'includes/navbar.php';
                         <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.5rem; margin-right: 15px; margin-top: 5px;"></i>
                         <div>
                             <h4 style="margin-bottom: 5px;">Email</h4>
-                            <p style="color: var(--text-light);">admin@celebesdriedfish.com</p>
+                            <p style="color: var(--text-light);">celebesdriedfish@gmail.com</p>
                         </div>
                     </li>
                 </ul>
 
                 <h2 style="color: var(--primary-color); margin: 40px 0 20px;">Sosial Media</h2>
                 <div style="display: flex; gap: 15px;">
-                    <a href="https://www.facebook.com/share/1EvG175B21/" target="_blank" style="width: 50px; height: 50px; background: #3b5998; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: var(--transition);"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/celebesdriedfish?igsh=cm91aDZ4bHcyeGE1" target="_blank" style="width: 50px; height: 50px; background: #E1306C; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: var(--transition);"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@celebesdriedfish?_t=ZS-8x2YNGl2pAw&_r=1" target="_blank" style="width: 50px; height: 50px; background: #010101; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: var(--transition);"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61590964343415" target="_blank" style="width: 50px; height: 50px; background: #3b5998; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: var(--transition);"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/celebesdriedfish_" target="_blank" style="width: 50px; height: 50px; background: #E1306C; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: var(--transition);"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@celebesdriedfishh" target="_blank" style="width: 50px; height: 50px; background: #010101; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: var(--transition);"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
 
