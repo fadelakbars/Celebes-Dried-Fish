@@ -12,6 +12,7 @@
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="product.php">Product</a></li>
                     <li><a href="service.php">Service</a></li>
+                    <li><a href="privacy.php">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">

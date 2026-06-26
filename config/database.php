@@ -1,5 +1,24 @@
 <?php
+// Hide PHP information header
+@header_remove("X-Powered-By");
+
+// Secure session cookie settings before session_start()
 if (session_status() === PHP_SESSION_NONE) {
+    $isSecure = false;
+    if (isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) === 'on') {
+        $isSecure = true;
+    } elseif (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strtolower($_SERVER['HTTP_X_FORWARDED_PROTO']) === 'https') {
+        $isSecure = true;
+    }
+
+    session_set_cookie_params([
+        'lifetime' => 0,
+        'path' => '/',
+        'domain' => '',
+        'secure' => $isSecure,
+        'httponly' => true,
+        'samesite' => 'Lax'
+    ]);
     session_start();
 }
 
