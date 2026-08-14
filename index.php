@@ -5,9 +5,9 @@ require_once 'includes/navbar.php';
 ?>
 
 <!-- Hero Section -->
-<section class="hero">
-    <div class="container" style="display: flex; justify-content: center; align-items: center; width: 100%;">
-        <div class="hero-content" style="background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); padding: 50px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 15px 35px rgba(0,0,0,0.2); text-align: center; max-width: 800px;">
+<section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/hero-bg.png?v=<?php echo file_exists('assets/img/hero-bg.png') ? filemtime('assets/img/hero-bg.png') : time(); ?>') center/cover no-repeat; position: relative;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; width: 100%; position: relative; z-index: 2;">
+        <div class="hero-content" style="background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); padding: 50px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 15px 35px rgba(0,0,0,0.2); text-align: center; max-width: 800px;">
             <h1 style="margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px; color: white; font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">CELEBES <br>DRIED FISH</h1>
             <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 30px;">
                 <div style="height: 2px; width: 40px; background-color: var(--primary-color);"></div>
